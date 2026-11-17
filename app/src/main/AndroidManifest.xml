@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- The handwriting, entity extraction and translation models are downloaded the first time -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoteMate">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.EditorActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.ScanActivity"
+            android:exported="false"
+            android:label="@string/title_scan"
+            android:parentActivityName=".ui.EditorActivity" />
+        <activity
+            android:name=".ui.HandwritingActivity"
+            android:exported="false"
+            android:label="@string/title_handwriting"
+            android:parentActivityName=".ui.EditorActivity" />
+        <activity
+            android:name=".ui.DeadlinesActivity"
+            android:exported="false"
+            android:label="@string/title_deadlines"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.AboutActivity"
+            android:exported="false"
+            android:label="@string/title_about"
+            android:parentActivityName=".ui.MainActivity" />
+    </application>
+
+</manifest>

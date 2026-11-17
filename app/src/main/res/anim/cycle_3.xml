@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Interpolator for shake.xml: repeats the movement three times, there and back -->
+<cycleInterpolator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:cycles="3" />

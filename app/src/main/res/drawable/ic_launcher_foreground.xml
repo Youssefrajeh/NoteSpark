@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 3D NoteMate foreground icon: stacked physical notepad with a 3D curled corner,
+     extruded note lines, and a faceted 3D gold AI sparkle badge. Fits inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Ambient & directional drop shadows under the notepad -->
+    <path
+        android:fillColor="#2606112E"
+        android:pathData="M36,30h23l14,14v37a6.5,6.5 0,0 1,-6.5 6.5h-30.5a6.5,6.5 0,0 1,-6.5 -6.5v-44.5a6.5,6.5 0,0 1,6.5 -6.5z" />
+    <path
+        android:fillColor="#44071436"
+        android:pathData="M35.5,29h23l14,14v36.5a5.5,5.5 0,0 1,-5.5 5.5h-31.5a5.5,5.5 0,0 1,-5.5 -5.5v-45a5.5,5.5 0,0 1,5.5 -5.5z" />
+
+    <!-- 2. Lower stacked sheet & 3D paper-block bottom thickness -->
+    <path android:pathData="M34.5,27.5h22.5l13.5,13.5v36.5a5,5 0,0 1,-5 5h-31a5,5 0,0 1,-5 -5v-45a5,5 0,0 1,5 -5z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#86A4E3"
+                android:endX="50"
+                android:endY="82.5"
+                android:startColor="#C4D6FF"
+                android:startX="50"
+                android:startY="74"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Middle page edge for layered 3D stack effect -->
+    <path android:pathData="M34.5,26.2h22.5l13.5,13.5v36.3a5,5 0,0 1,-5 5h-31a5,5 0,0 1,-5 -5v-44.8a5,5 0,0 1,5 -5z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#B5C9F7"
+                android:endX="50"
+                android:endY="81"
+                android:startColor="#E3ECFF"
+                android:startX="50"
+                android:startY="75"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- 3. Main 3D top paper sheet -->
+    <path android:pathData="M34.5,25h22.5l13.5,13.5v35.5a5,5 0,0 1,-5 5h-31a5,5 0,0 1,-5 -5v-44a5,5 0,0 1,5 -5z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#DCE7FF"
+                android:endX="70.5"
+                android:endY="79"
+                android:startColor="#FFFFFF"
+                android:startX="29.5"
+                android:startY="25"
+                android:type="linear">
+                <item
+                    android:color="#FFFFFF"
+                    android:offset="0.0" />
+                <item
+                    android:color="#F7FAFF"
+                    android:offset="0.6" />
+                <item
+                    android:color="#DCE7FF"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Specular top-left rim highlight on the main paper sheet -->
+    <path
+        android:pathData="M30.2,74v-44a4.3,4.3 0,0 1,4.3 -4.3h22"
+        android:strokeWidth="1.1"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+
+    <!-- 4. Cast shadow under the 3D curled corner -->
+    <path android:pathData="M57,25l13.5,13.5v4.5h-11.5a4.5,4.5 0,0 1,-4.5 -4.5v-13.5z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#001D439B"
+                android:endX="54"
+                android:endY="44"
+                android:startColor="#48163682"
+                android:startX="62"
+                android:startY="35"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- 5. 3D curled corner flap with cylindrical shading -->
+    <path android:pathData="M57,25v9a4.5,4.5 0,0 0,4.5 4.5h9z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#7B9FEF"
+                android:endX="58"
+                android:endY="38.5"
+                android:startColor="#EEF4FF"
+                android:startX="66"
+                android:startY="30"
+                android:type="linear">
+                <item
+                    android:color="#F2F6FF"
+                    android:offset="0.0" />
+                <item
+                    android:color="#BDD2FF"
+                    android:offset="0.55" />
+                <item
+                    android:color="#7B9FEF"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Highlight along the fold ridge -->
+    <path
+        android:pathData="M57,25.5v8.5a4.5,4.5 0,0 0,4.5 4.5h8.5"
+        android:strokeWidth="0.9"
+        android:strokeColor="#D9FFFFFF"
+        android:strokeLineCap="round" />
+
+    <!-- 6. Extruded 3D note lines & course header pill -->
+    <!-- Small 3D course tag pill at top-left of page -->
+    <path
+        android:fillColor="#221D4599"
+        android:pathData="M38,35.8h11a2.1,2.1 0,0 1,0 4.2h-11a2.1,2.1 0,0 1,0 -4.2z" />
+    <path android:pathData="M38,35h11a2.1,2.1 0,0 1,0 4.2h-11a2.1,2.1 0,0 1,0 -4.2z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#3566D6"
+                android:endX="43"
+                android:endY="39.2"
+                android:startColor="#6BA0FF"
+                android:startX="43"
+                android:startY="35"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Line 1 shadow + 3D bar -->
+    <path
+        android:pathData="M38,47.9h22"
+        android:strokeWidth="3.6"
+        android:strokeColor="#2416347A"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M38,47h22"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:endColor="#1E46A3"
+                android:endX="60"
+                android:endY="48.8"
+                android:startColor="#487DF2"
+                android:startX="38"
+                android:startY="45.2"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Line 2 shadow + 3D bar -->
+    <path
+        android:pathData="M38,56.9h19"
+        android:strokeWidth="3.6"
+        android:strokeColor="#2416347A"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M38,56h19"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:endColor="#1E46A3"
+                android:endX="57"
+                android:endY="57.8"
+                android:startColor="#487DF2"
+                android:startX="38"
+                android:startY="54.2"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Line 3 shadow + 3D bar -->
+    <path
+        android:pathData="M38,65.9h12"
+        android:strokeWidth="3.6"
+        android:strokeColor="#2416347A"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M38,65h12"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:endColor="#1E46A3"
+                android:endX="50"
+                android:endY="66.8"
+                android:startColor="#487DF2"
+                android:startX="38"
+                android:startY="63.2"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- 7. 3D Faceted Golden AI Sparkle Badge -->
+    <!-- Drop shadow under the 3D sparkle -->
+    <path
+        android:fillColor="#5509183F"
+        android:pathData="M70,61.5C71.3,69.5 74.7,72.9 82.7,74.2C74.7,75.5 71.3,78.9 70,86.9C68.7,78.9 65.3,75.5 57.3,74.2C65.3,72.9 68.7,69.5 70,61.5z" />
+
+    <!-- Outer 3D metallic gold rim of the sparkle -->
+    <path android:pathData="M69.5,59C70.9,67.4 74.6,71.1 83,72.5C74.6,73.9 70.9,77.6 69.5,86C68.1,77.6 64.4,73.9 56,72.5C64.4,71.1 68.1,67.4 69.5,59z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#C86400"
+                android:endX="80"
+                android:endY="84"
+                android:startColor="#FFF59D"
+                android:startX="60"
+                android:startY="61"
+                android:type="linear">
+                <item
+                    android:color="#FFF7B2"
+                    android:offset="0.0" />
+                <item
+                    android:color="#FFC928"
+                    android:offset="0.48" />
+                <item
+                    android:color="#D16B00"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Upper-left lit 3D facet of the sparkle -->
+    <path android:pathData="M69.5,59C68.1,67.4 64.4,71.1 56,72.5L69.5,72.5Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#FFD54F"
+                android:endX="69.5"
+                android:endY="72.5"
+                android:startColor="#FFFFFF"
+                android:startX="61"
+                android:startY="64"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Lower-right shaded 3D facet of the sparkle -->
+    <path android:pathData="M83,72.5C74.6,73.9 70.9,77.6 69.5,86L69.5,72.5Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#B85600"
+                android:endX="78"
+                android:endY="81"
+                android:startColor="#F59E0B"
+                android:startX="69.5"
+                android:startY="72.5"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Inner bright 3D core of the sparkle -->
+    <path android:pathData="M69.5,64.5C70.3,69.3 72.2,71.2 77,72.5C72.2,73.8 70.3,75.7 69.5,80.5C68.7,75.7 66.8,73.8 62,72.5C66.8,71.2 68.7,69.3 69.5,64.5z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="68"
+                android:centerY="71"
+                android:gradientRadius="9"
+                android:type="radial">
+                <item
+                    android:color="#FFFFFF"
+                    android:offset="0.0" />
+                <item
+                    android:color="#FFE57F"
+                    android:offset="0.55" />
+                <item
+                    android:color="#00FFB300"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Secondary small 3D companion sparkle -->
+    <path
+        android:fillColor="#3808163B"
+        android:pathData="M79,53.8C79.5,56.6 80.7,57.8 83.5,58.3C80.7,58.8 79.5,60 79,62.8C78.5,60 77.3,58.8 74.5,58.3C77.3,57.8 78.5,56.6 79,53.8z" />
+    <path android:pathData="M78.5,52.5C79,55.5 80.2,56.7 83.2,57.2C80.2,57.7 79,58.9 78.5,61.9C78,58.9 76.8,57.7 73.8,57.2C76.8,56.7 78,55.5 78.5,52.5z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#F59E0B"
+                android:endX="82"
+                android:endY="61"
+                android:startColor="#FFFFFF"
+                android:startX="75"
+                android:startY="54"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+</vector>

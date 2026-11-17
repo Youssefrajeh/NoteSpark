@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One group member on the About screen: name, student number and what they worked on -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_tag"
+        android:backgroundTint="?attr/colorPrimaryContainer"
+        android:importantForAccessibility="no"
+        android:padding="8dp"
+        android:src="@drawable/ic_person"
+        app:tint="?attr/colorOnPrimaryContainer" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textStyle="bold"
+            tools:text="Youssef Rajeh" />
+
+        <TextView
+            android:id="@+id/text_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="?attr/colorPrimary"
+            tools:text="Student number: 1196323" />
+
+        <TextView
+            android:id="@+id/text_role"
+            style="@style/Widget.NoteMate.Caption"
+            tools:text="ML features: scan, handwriting, deadlines, translation, summary" />
+    </LinearLayout>
+</LinearLayout>

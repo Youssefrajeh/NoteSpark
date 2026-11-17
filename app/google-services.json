@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "179425508634",
+    "project_id": "notemate-12091",
+    "storage_bucket": "notemate-12091.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179425508634:android:10d817bf1b3926999f00a3",
+        "android_client_info": {
+          "package_name": "com.group15.notemate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSJTds91erqCeABwGtoYXrxHIflBcY-1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179425508634:android:2143c9dc9e8aacda9f00a3",
+        "android_client_info": {
+          "package_name": "com.youssefrajeh.notemate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSJTds91erqCeABwGtoYXrxHIflBcY-1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

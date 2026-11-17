@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Landscape: search and the course filter share one row, and the notes are in two columns -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.NoteMate.SearchField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            app:startIconDrawable="@drawable/ic_search">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_search"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            style="@style/Widget.NoteMate.Caption"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:labelFor="@id/spinner_course"
+            android:text="@string/label_course_filter" />
+
+        <Spinner
+            android:id="@+id/spinner_course"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:layoutAnimation="@anim/layout_slide_up"
+            android:paddingHorizontal="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="96dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/item_note" />
+
+        <include
+            android:id="@+id/empty"
+            layout="@layout/empty_state" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_new_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:text="@string/new_note"
+            app:icon="@drawable/ic_add" />
+    </FrameLayout>
+</LinearLayout>

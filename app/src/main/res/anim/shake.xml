@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tween animation (translate): the view moves left and right three times, to say "something is missing here" -->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="450"
+    android:fromXDelta="0"
+    android:interpolator="@anim/cycle_3"
+    android:toXDelta="3%" />

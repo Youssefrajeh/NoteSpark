@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.EditorActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="24dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.NoteMate.TextInput"
+                android:hint="@string/hint_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.NoteMate.TextInput"
+                android:hint="@string/hint_course">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Category / priority badge for the note -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:selectionRequired="false"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_cat_lecture"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_lecture" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_cat_assignment"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_assignment" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_cat_exam"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_exam" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_cat_urgent"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_urgent" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <!-- Scan, Handwrite and Dictate add text to the note; the others work on the text of the note -->
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_scan"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_scan"
+                    app:chipIcon="@drawable/ic_scan" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_handwrite"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_handwrite"
+                    app:chipIcon="@drawable/ic_draw" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_dictate"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_dictate"
+                    app:chipIcon="@drawable/ic_mic" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_speak"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_speak"
+                    app:chipIcon="@drawable/ic_volume" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_summarize"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_summarize"
+                    app:chipIcon="@drawable/ic_sparkle" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_translate"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_translate"
+                    app:chipIcon="@drawable/ic_translate" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_deadlines"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_deadlines"
+                    app:chipIcon="@drawable/ic_event" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_flashcards"
+                    style="@style/Widget.Material3.Chip.Assist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tool_flashcards"
+                    app:chipIcon="@drawable/ic_cards" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_content"
+                style="@style/Widget.NoteMate.TextInput"
+                android:hint="@string/hint_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top|start"
+                    android:imeOptions="flagNoExtractUi"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:minLines="6" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/text_word_count"
+                style="@style/Widget.NoteMate.Caption"
+                android:layout_marginTop="4dp"
+                android:text="@string/word_count_empty"
+                android:textAppearance="?attr/textAppearanceLabelMedium" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_summary"
+                style="@style/Widget.NoteMate.SectionCard"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Widget.NoteMate.CardTitle"
+                        android:text="@string/summary_title"
+                        app:drawableStartCompat="@drawable/ic_sparkle" />
+
+                    <TextView
+                        android:id="@+id/text_summary"
+                        style="@style/Widget.NoteMate.Body"
+                        android:textIsSelectable="true"
+                        tools:text="• Coroutines run work without blocking the main thread." />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_translation"
+                style="@style/Widget.NoteMate.SectionCard"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_translation_title"
+                        style="@style/Widget.NoteMate.CardTitle"
+                        app:drawableStartCompat="@drawable/ic_translate"
+                        tools:text="Translated from French" />
+
+                    <TextView
+                        android:id="@+id/text_translation"
+                        style="@style/Widget.NoteMate.Body"
+                        android:textIsSelectable="true"
+                        tools:text="The assignment is due on November 28." />
+
+                    <Button
+                        android:id="@+id/button_use_translation"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/replace_note_text" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme (light): a blue primary with neutral blue-grey surfaces -->
+    <color name="primary">#2E5BBA</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#D9E2FF</color>
+    <color name="on_primary_container">#001A43</color>
+    <color name="secondary">#575E71</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#DBE2F9</color>
+    <color name="on_secondary_container">#141B2C</color>
+    <!-- Tertiary (purple): the pin on a pinned note -->
+    <color name="tertiary">#6A3E91</color>
+    <color name="on_tertiary">#FFFFFF</color>
+    <color name="tertiary_container">#EFE6F7</color>
+    <color name="on_tertiary_container">#2B1640</color>
+    <color name="surface">#F8F9FD</color>
+    <color name="on_surface">#1A1B20</color>
+    <color name="surface_variant">#E1E2EC</color>
+    <color name="on_surface_variant">#44474F</color>
+    <color name="surface_container_lowest">#FFFFFF</color>
+    <color name="surface_container_low">#F2F3F9</color>
+    <color name="surface_container">#ECEDF4</color>
+    <color name="surface_container_high">#E6E8EF</color>
+    <color name="surface_container_highest">#E0E2E9</color>
+    <color name="outline">#757780</color>
+    <color name="outline_variant">#C5C6D0</color>
+
+
+    <!-- Labels (course, category): background + text -->
+    <color name="tag_urgent_bg">#FDE7E6</color>
+    <color name="tag_urgent_text">#B3261E</color>
+    <color name="tag_soon_bg">#FFEFD9</color>
+    <color name="tag_soon_text">#8A4B00</color>
+    <color name="tag_info_bg">#E3EAFA</color>
+    <color name="tag_info_text">#2E5BBA</color>
+    <color name="tag_follow_bg">#EFE6F7</color>
+    <color name="tag_follow_text">#6A3E91</color>
+
+
+</resources>

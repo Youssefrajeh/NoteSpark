@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">NoteSpark</string>
+
+    <!-- Screen titles -->
+    <string name="title_new_note">New note</string>
+    <string name="title_edit_note">Edit note</string>
+    <string name="title_scan">Scan notes</string>
+    <string name="title_handwriting">Handwriting</string>
+    <string name="title_deadlines">Upcoming deadlines</string>
+
+    <!-- Main screen -->
+    <string name="hint_search">Search notes</string>
+    <string name="label_course_filter">Course</string>
+    <string name="filter_all_courses">All courses</string>
+    <string name="new_note">New note</string>
+    <string name="action_deadlines">Upcoming deadlines</string>
+    <string name="untitled_note">Untitled note</string>
+    <string name="pin_note">Pin note</string>
+    <string name="unpin_note">Unpin note</string>
+    <string name="empty_title">No notes yet</string>
+    <string name="empty_message">Tap New note to type, scan or handwrite your first note.</string>
+    <string name="empty_filtered_title">No notes found</string>
+    <string name="empty_filtered_message">Try another search or course.</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="undo">Undo</string>
+
+    <!-- Note editor -->
+    <string name="hint_title">Title</string>
+    <string name="hint_course">Course (e.g. INFO-5126)</string>
+    <string name="hint_content">Note</string>
+    <string name="category_lecture">Lecture</string>
+    <string name="category_assignment">Assignment</string>
+    <string name="category_exam">Exam</string>
+    <string name="category_urgent">Urgent</string>
+    <string name="action_save">Save</string>
+    <string name="action_share">Share note</string>
+    <string name="action_export_pdf">Export as PDF</string>
+    <string name="action_delete">Delete</string>
+    <string name="tool_scan">Scan</string>
+    <string name="tool_handwrite">Handwrite</string>
+    <string name="tool_dictate">Dictate</string>
+    <string name="tool_speak">Read aloud</string>
+    <string name="tool_stop_speaking">Stop reading</string>
+    <string name="tool_summarize">Summarize</string>
+    <string name="tool_translate">Translate</string>
+    <string name="tool_deadlines">Find dates</string>
+    <string name="tool_flashcards">Flashcards</string>
+    <string name="dictate_prompt">Speak to add to your note</string>
+    <string name="pdf_saved">PDF saved.</string>
+    <string name="word_count_empty">0 words</string>
+    <string name="word_count_stats">%1$d words · ~%2$d min read</string>
+    <string name="flashcards_title">Flashcard %1$d of %2$d</string>
+    <string name="flashcard_front_label">Prompt (tap Flip for answer):</string>
+    <string name="flashcard_back_label">Answer:</string>
+    <string name="flashcard_flip">Flip</string>
+    <string name="flashcard_next">Next</string>
+    <string name="flashcard_close">Close</string>
+    <string name="no_flashcards_found">Write at least a sentence or Term: Definition to create flashcards.</string>
+    <string name="smart_action_email">Email %1$s</string>
+    <string name="smart_action_phone">Call %1$s</string>
+    <string name="smart_action_url">Open %1$s</string>
+    <string name="smart_action_address">Map %1$s</string>
+    <string name="summary_title">Summary</string>
+    <string name="translation_title">Translated from %1$s</string>
+    <string name="replace_note_text">Replace note text</string>
+    <string name="dates_dialog_title">Add a date to your calendar</string>
+    <string name="no_dates_found">No dates or times were found in this note.</string>
+    <string name="delete_title">Delete this note?</string>
+    <string name="delete_message">The note cannot be recovered after it is deleted.</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Scan -->
+    <string name="scan_intro">Scan a textbook page, handout or whiteboard, or pick a picture. NoteSpark reads the text so you can add it to your note.</string>
+    <string name="scan_document">Scan page</string>
+    <string name="pick_image">Pick image</string>
+    <string name="image_preview_description">The scanned page</string>
+    <string name="hint_recognized_text">Recognized text</string>
+    <string name="add_to_note">Add to note</string>
+
+    <!-- Handwriting -->
+    <string name="handwriting_intro">Write one line with your finger or a stylus, then tap Convert. Repeat for the next line.</string>
+    <string name="canvas_description">Handwriting area</string>
+    <string name="clear">Clear</string>
+    <string name="convert">Convert</string>
+
+    <!-- Upcoming deadlines -->
+    <string name="add_to_calendar">Add to calendar</string>
+    <string name="deadline_from_note">From: %1$s</string>
+    <string name="deadlines_empty_title">No upcoming deadlines</string>
+    <string name="deadlines_empty_message">Dates and times you write in your notes, such as "assignment due Nov 28", are listed here.</string>
+
+    <!-- About -->
+    <string name="title_about">About</string>
+    <string name="action_about">About</string>
+    <string name="logo_description">NoteSpark logo</string>
+    <string name="about_tagline">A smart note-taking app for students</string>
+    <string name="about_course">INFO-5126 Mobile Development Advanced · Fall 2026</string>
+    <string name="bullet_item">• %1$s</string>
+    <string name="about_what_title">What NoteSpark does</string>
+    <string name="about_description">NoteSpark keeps all your class notes in one place. You can type a note, scan a textbook page, handout or whiteboard with the camera, or write by hand on the screen, and NoteSpark turns it into text you can edit. Notes are organized by course and can be searched and pinned. Google ML Kit then helps you study: it finds the deadlines in your notes, translates notes to English and summarizes long notes. Your notes are saved in the cloud with Firebase Cloud Firestore, in a private account for your phone, and they stay available offline. The ML Kit features run on your device, so your notes are never sent to them and they work offline once the models are downloaded.</string>
+    <string name="about_features_title">Features</string>
+    <string-array name="about_features">
+        <item>Scan notes: the ML Kit Document Scanner and Text Recognition turn a page into text</item>
+        <item>Handwriting to text: write with a finger or stylus, converted by Digital Ink Recognition</item>
+        <item>Upcoming deadlines: Entity Extraction finds the dates and times in your notes, and one tap adds them to your calendar</item>
+        <item>Translate notes: Language Identification and Translation turn a note into English</item>
+        <item>Summarize notes: Gemini Nano writes a short summary on supported phones</item>
+        <item>Organize: sort notes by course, search them and pin the important ones</item>
+        <item>Cloud storage: notes are saved in Firebase Cloud Firestore under a private anonymous account, and keep working offline</item>
+    </string-array>
+    <string name="about_how_title">How to use it</string>
+    <string-array name="about_how_to">
+        <item>Tap New note, then give the note a title and a course</item>
+        <item>Type your note, or tap Scan or Handwrite to add text</item>
+        <item>Tap Summarize, Translate or Find dates to work on the note</item>
+        <item>Tap the check mark or go back to save</item>
+        <item>On the main screen, search, filter by course or pin a note</item>
+        <item>Tap the calendar icon to see your upcoming deadlines</item>
+    </string-array>
+    <string name="about_members_title">Group members</string>
+    <string name="about_group">Group 15 · Section 03 · Professor Osam Ali-Ozkan</string>
+    <string name="member_number">Student number: %1$s</string>
+    <!-- The names, the student numbers and the roles are in the same order -->
+    <string-array name="member_names">
+        <item>Youssef Rajeh</item>
+        <item>Abdul Maarouf</item>
+        <item>Urshit Patel</item>
+    </string-array>
+    <string-array name="member_numbers">
+        <item>1196323</item>
+        <item>1144451</item>
+        <item>1190517</item>
+    </string-array>
+    <string-array name="member_roles">
+        <item>ML features: scanning and text recognition, handwriting, deadlines, translation and summary</item>
+        <item>Flashcards and study mode, stats and streak dashboard</item>
+        <item>Main screen and note editor, QR sharing, About screen, theme and landscape layouts</item>
+    </string-array>
+
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong. %1$s</string>
+    <string name="error_note_missing">This note no longer exists.</string>
+    <string name="error_note_empty">Write something in the note first.</string>
+    <string name="error_no_text_found">No text was found in this image.</string>
+    <string name="error_scanner_unavailable">The document scanner is not available on this device.</string>
+    <string name="error_nothing_drawn">Write something in the box first.</string>
+    <string name="error_handwriting_not_read">The handwriting could not be read. Try again.</string>
+    <string name="error_handwriting_unavailable">Handwriting recognition is not available.</string>
+    <string name="error_already_english">This note is already in English.</string>
+    <string name="error_language_unsupported">The language of this note is not supported for translation.</string>
+    <string name="error_language_unknown">The language of this note could not be detected. Longer notes work best.</string>
+    <string name="error_cloud_unavailable">Your notes could not be loaded from the cloud. Check your internet connection and try again.</string>
+    <string name="error_notes_damaged">Your saved notes could not be read. A copy of the damaged file was kept, and a new list was started.</string>
+    <string name="error_text_unclear">The text in this image could not be read clearly. Try a sharper, well-lit scan of printed text.</string>
+    <string name="warning_scan_unclear">Some of this text may be wrong: scanning works best with printed text in languages written with Latin letters (English, French, Spanish&#8230;). Check it before adding it.</string>
+    <string name="error_summary_unavailable">Summaries need Gemini Nano, which this device does not support.</string>
+    <string name="error_summary_failed">The summary could not be created. Longer notes work best.</string>
+    <string name="error_speech_unavailable">Voice input is not available on this device.</string>
+    <string name="error_tts_unavailable">Text-to-speech is not available on this device.</string>
+    <string name="error_no_app">No app on this device can open this.</string>
+</resources>

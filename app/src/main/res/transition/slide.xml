@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Activity transition: screens slide in from (and back out to) the end edge -->
+<slide xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300"
+    android:interpolator="@android:interpolator/fast_out_slow_in"
+    android:slideEdge="end" />

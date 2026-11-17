@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="14 14 80 80" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4C83F5"/>
+      <stop offset="0.52" stop-color="#2B5BC7"/>
+      <stop offset="1" stop-color="#10255A"/>
+    </linearGradient>
+    <radialGradient id="keyLight" cx="0.22" cy="0.18" r="0.75">
+      <stop offset="0" stop-color="#7FB2FF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#386CE2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stackBottom" x1="0.5" y1="0.85" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#C4D6FF"/>
+      <stop offset="1" stop-color="#86A4E3"/>
+    </linearGradient>
+    <linearGradient id="stackMid" x1="0.5" y1="0.88" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#E3ECFF"/>
+      <stop offset="1" stop-color="#B5C9F7"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.6" stop-color="#F7FAFF"/>
+      <stop offset="1" stop-color="#DCE7FF"/>
+    </linearGradient>
+    <linearGradient id="foldShadow" x1="0.7" y1="0.3" x2="0.1" y2="0.9">
+      <stop offset="0" stop-color="#163682" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#1D439B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="0.8" y1="0.2" x2="0.1" y2="1">
+      <stop offset="0" stop-color="#F2F6FF"/>
+      <stop offset="0.55" stop-color="#BDD2FF"/>
+      <stop offset="1" stop-color="#7B9FEF"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#487DF2"/>
+      <stop offset="1" stop-color="#1E46A3"/>
+    </linearGradient>
+    <linearGradient id="goldBase" x1="0.15" y1="0.1" x2="0.9" y2="0.95">
+      <stop offset="0" stop-color="#FFF7B2"/>
+      <stop offset="0.48" stop-color="#FFC928"/>
+      <stop offset="1" stop-color="#D16B00"/>
+    </linearGradient>
+    <linearGradient id="goldHighlight" x1="0.2" y1="0.2" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFD54F"/>
+    </linearGradient>
+    <linearGradient id="goldShade" x1="0" y1="0" x2="0.9" y2="0.9">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#B85600"/>
+    </linearGradient>
+    <radialGradient id="goldCore" cx="0.45" cy="0.45" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#FFE57F"/>
+      <stop offset="1" stop-color="#FFB300" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 3D Rounded Icon Base -->
+  <rect x="14" y="14" width="80" height="80" rx="18" fill="url(#bg)"/>
+  <rect x="14" y="14" width="80" height="80" rx="18" fill="url(#keyLight)"/>
+
+  <!-- Ambient & drop shadows -->
+  <path fill="#06112E" fill-opacity="0.18" d="M36,30h23l14,14v37a6.5,6.5 0,0 1,-6.5 6.5h-30.5a6.5,6.5 0,0 1,-6.5 -6.5v-44.5a6.5,6.5 0,0 1,6.5 -6.5z"/>
+  <path fill="#071436" fill-opacity="0.28" d="M35.5,29h23l14,14v36.5a5.5,5.5 0,0 1,-5.5 5.5h-31.5a5.5,5.5 0,0 1,-5.5 -5.5v-45a5.5,5.5 0,0 1,5.5 -5.5z"/>
+
+  <!-- Stacked 3D paper edges -->
+  <path fill="url(#stackBottom)" d="M34.5,27.5h22.5l13.5,13.5v36.5a5,5 0,0 1,-5 5h-31a5,5 0,0 1,-5 -5v-45a5,5 0,0 1,5 -5z"/>
+  <path fill="url(#stackMid)" d="M34.5,26.2h22.5l13.5,13.5v36.3a5,5 0,0 1,-5 5h-31a5,5 0,0 1,-5 -5v-44.8a5,5 0,0 1,5 -5z"/>
+
+  <!-- Main 3D page -->
+  <path fill="url(#page)" d="M34.5,25h22.5l13.5,13.5v35.5a5,5 0,0 1,-5 5h-31a5,5 0,0 1,-5 -5v-44a5,5 0,0 1,5 -5z"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" d="M30.2,74v-44a4.3,4.3 0,0 1,4.3 -4.3h22"/>
+
+  <!-- Fold cast shadow & 3D curled corner -->
+  <path fill="url(#foldShadow)" d="M57,25l13.5,13.5v4.5h-11.5a4.5,4.5 0,0 1,-4.5 -4.5v-13.5z"/>
+  <path fill="url(#fold)" d="M57,25v9a4.5,4.5 0,0 0,4.5 4.5h9z"/>
+  <path fill="none" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="0.9" stroke-linecap="round" d="M57,25.5v8.5a4.5,4.5 0,0 0,4.5 4.5h8.5"/>
+
+  <!-- Course pill & 3D note lines -->
+  <path fill="#1D4599" fill-opacity="0.14" d="M38,35.8h11a2.1,2.1 0,0 1,0 4.2h-11a2.1,2.1 0,0 1,0 -4.2z"/>
+  <path fill="url(#lineGrad)" d="M38,35h11a2.1,2.1 0,0 1,0 4.2h-11a2.1,2.1 0,0 1,0 -4.2z"/>
+
+  <path fill="none" stroke="#16347A" stroke-opacity="0.15" stroke-width="3.6" stroke-linecap="round" d="M38,47.9h22M38,56.9h19M38,65.9h12"/>
+  <path fill="none" stroke="url(#lineGrad)" stroke-width="3.6" stroke-linecap="round" d="M38,47h22M38,56h19M38,65h12"/>
+
+  <!-- 3D Faceted Gold AI Sparkle -->
+  <path fill="#09183F" fill-opacity="0.35" d="M70,61.5C71.3,69.5 74.7,72.9 82.7,74.2C74.7,75.5 71.3,78.9 70,86.9C68.7,78.9 65.3,75.5 57.3,74.2C65.3,72.9 68.7,69.5 70,61.5z"/>
+  <path fill="url(#goldBase)" d="M69.5,59C70.9,67.4 74.6,71.1 83,72.5C74.6,73.9 70.9,77.6 69.5,86C68.1,77.6 64.4,73.9 56,72.5C64.4,71.1 68.1,67.4 69.5,59z"/>
+  <path fill="url(#goldHighlight)" d="M69.5,59C68.1,67.4 64.4,71.1 56,72.5L69.5,72.5Z"/>
+  <path fill="url(#goldShade)" d="M83,72.5C74.6,73.9 70.9,77.6 69.5,86L69.5,72.5Z"/>
+  <path fill="url(#goldCore)" d="M69.5,64.5C70.3,69.3 72.2,71.2 77,72.5C72.2,73.8 70.3,75.7 69.5,80.5C68.7,75.7 66.8,73.8 62,72.5C66.8,71.2 68.7,69.3 69.5,64.5z"/>
+
+  <!-- Secondary 3D Sparkle -->
+  <path fill="#08163B" fill-opacity="0.22" d="M79,53.8C79.5,56.6 80.7,57.8 83.5,58.3C80.7,58.8 79.5,60 79,62.8C78.5,60 77.3,58.8 74.5,58.3C77.3,57.8 78.5,56.6 79,53.8z"/>
+  <path fill="url(#goldHighlight)" d="M78.5,52.5C79,55.5 80.2,56.7 83.2,57.2C80.2,57.7 79,58.9 78.5,61.9C78,58.9 76.8,57.7 73.8,57.2C76.8,56.7 78,55.5 78.5,52.5z"/>
+</svg>
